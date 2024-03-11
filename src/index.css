@@ -3,13 +3,52 @@
 @tailwind utilities;
 
 .circle {
-    height: 24px;
-    width: 24px;
-    border-radius: 24px;
-    background-color: black;
-    position: fixed; 
-    top: 0;
-    left: 0;
-    pointer-events: none;
-    z-index: 99999999; /* so that it stays on top of all other elements */
-  }
+  height: 24px;
+  width: 24px;
+  border-radius: 24px;
+  background-color: black;
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  z-index: 99999999;
+}
+
+/* CUSTOM SCROLLBAR */
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: rgb(28 25 23);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #ff8800;
+  border-radius: 0.5rem;
+}
+/* CUSTOM SCROLLBAR END*/
+
+@font-face {
+  font-family: ethnocentric;
+  src: url(../public/fonts/ethnocentric.otf);
+}
+
+.orangeToRedGradient {
+  @apply from-[#ff8800] to-[#c11212]
+}
+
+.cardContainer {
+  @apply relative h-52 lg:h-64 transition-all bg-cover shadow-lg cursor-pointer lg:w-[30rem] rounded-xl hover:shadow-2xl;
+}
+
+.cardFilter {
+  @apply absolute inset-0 items-center justify-center hidden transition-all duration-1000 bg-black bg-opacity-50 rounded-xl group-hover:flex;
+}
+
+.cardTitle {
+  @apply text-2xl tracking-wider text-center text-white;
+}

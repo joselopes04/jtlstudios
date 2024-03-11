@@ -20,7 +20,7 @@ function App() {
   };
 
   return (
-    <div className='px-8 lg:px-24 bg-gray-50 dark:bg-stone-900 cursor-none'
+    <div className='px-8 lg:px-24 bg-stone-900 cursor-none'
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
     >
