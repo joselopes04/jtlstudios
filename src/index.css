@@ -30,6 +30,7 @@
   background: #ff8800;
   border-radius: 0.5rem;
 }
+
 /* CUSTOM SCROLLBAR END*/
 
 @font-face {
@@ -37,12 +38,16 @@
   src: url(../public/fonts/ethnocentric.otf);
 }
 
+.title {
+  @apply text-3xl lg:text-6xl font-semibold tracking-wider text-transparent text-center bg-gradient-to-r orangeToRedGradient bg-clip-text font-['ethnocentric'];
+}
+
 .orangeToRedGradient {
-  @apply from-[#ff8800] to-[#c11212]
+  @apply from-brandOrange to-brandRed;
 }
 
 .cardContainer {
-  @apply relative h-52 lg:h-64 transition-all bg-cover shadow-lg cursor-pointer lg:w-[30rem] rounded-xl hover:shadow-2xl;
+  @apply relative h-32 transition-all bg-cover shadow-lg cursor-pointer sm:h-52 lg:h-64 aspect-video rounded-xl hover:shadow-2xl;
 }
 
 .cardFilter {
@@ -50,5 +55,9 @@
 }
 
 .cardTitle {
-  @apply text-2xl tracking-wider text-center text-white;
+  @apply text-2xl tracking-wider text-center text-white select-none;
+}
+
+.inputField{
+  @apply w-full p-2 text-white placeholder-gray-400 bg-gray-700 border border-gray-600 rounded-lg lg:w-96 focus:outline-none;
 }
