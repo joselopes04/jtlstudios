@@ -31,6 +31,11 @@
   border-radius: 0.5rem;
 }
 
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #d87300;
+}
+
 /* CUSTOM SCROLLBAR END*/
 
 @font-face {
@@ -39,7 +44,7 @@
 }
 
 .title {
-  @apply text-3xl lg:text-6xl font-semibold tracking-wider text-transparent text-center bg-gradient-to-r orangeToRedGradient bg-clip-text font-['ethnocentric'];
+  @apply text-3xl sm:text-5xl lg:text-6xl font-semibold tracking-wider text-transparent text-center bg-gradient-to-r orangeToRedGradient bg-clip-text font-['ethnocentric'];
 }
 
 .orangeToRedGradient {
@@ -47,7 +52,7 @@
 }
 
 .cardContainer {
-  @apply relative h-32 transition-all bg-cover shadow-lg cursor-pointer sm:h-52 lg:h-64 aspect-video rounded-xl hover:shadow-2xl;
+  @apply relative h-32 hover:scale-105 transition-all bg-cover shadow-lg cursor-pointer sm:h-52 min-[1740px]:h-64 aspect-video rounded-xl hover:shadow-2xl;
 }
 
 .cardFilter {
@@ -59,5 +64,5 @@
 }
 
 .inputField{
-  @apply w-full p-2 text-white placeholder-gray-400 bg-gray-700 border border-gray-600 rounded-lg lg:w-96 focus:outline-none;
+  @apply w-full p-2 text-lg text-white placeholder-gray-400 bg-gray-700 border border-gray-600 rounded-lg lg:w-96 focus:outline-none;
 }
