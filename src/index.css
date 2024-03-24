@@ -66,3 +66,7 @@
 .inputField{
   @apply w-full p-2 text-lg text-white placeholder-gray-400 bg-gray-700 border border-gray-600 rounded-lg lg:w-96 focus:outline-none;
 }
+
+.button{
+  @apply my-2 text-white focus:outline-none font-medium rounded-lg px-5 py-2.5 text-center bg-gradient-to-br orangeToRedGradient hover:opacity-70;
+}

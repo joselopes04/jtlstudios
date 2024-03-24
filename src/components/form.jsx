@@ -36,7 +36,7 @@ const Form = () => {
             <h1 className="my-12 title">Entra em contacto</h1>
             <div className='grid max-w-5xl grid-cols-1 p-10 mb-12 transition-all border-2 gap-x-4 border-brandOrange rounded-xl sm:grid-cols-2 bg-slate-800'>
                 <div>
-                    <h2 className='text-xl font-bold leading-10 tracking-wider text-white sm:text-3xl'>
+                    <h2 className='text-xl font-bold tracking-wider text-white ng-10 sm:text-3xl'>
                         Contatce-nos e <span className='text-brandOrange'>juntos</span> vamos criar algo
                         <span className='text-brandOrange'> incrível</span>!
                     </h2>
@@ -64,17 +64,19 @@ const Form = () => {
                         <label className="mb-1 font-medium text-white ">Indique o que procura</label>
                         <select id="projectType" className="inputField">
                             <option value="" disabled selected>Selecione o tipo de projeto</option>
-                            <option value="website" >Website</option>
-                            <option value="webapp" >Web App</option>
+                            <option value="website" >Website (Página única)</option>
+                            <option value="website" >Website (Multi página)</option>
+                            <option value="Aplicação web" >Aplicação Web</option>
                             <option value="mobileapp" >Mobile App</option>
                             <option value="outro" >Outro</option>
+                            <option value="nãoSei" >Não tenho a certeza</option>
                         </select>
                     </div>
                     <div className="flex flex-col w-full mb-5">
                         <label className="font-medium text-white mb-21">Descreva o seu projeto</label>
                         <textarea id="description" rows="4" className="resize-none inputField" placeholder="Breve descrição do seu projeto"></textarea>
                     </div>
-                    <button onClick={(e) => sendEmail(e)} className="my-2 flex items-center gap-x-3 text-white focus:outline-none font-medium rounded-lg px-5 py-2.5 text-center bg-gradient-to-br orangeToRedGradient hover:opacity-70">
+                    <button onClick={(e) => sendEmail(e)} className="flex items-center button gap-x-3">
                         Enviar mensagem
                         <BsFillSendFill />
                     </button>
