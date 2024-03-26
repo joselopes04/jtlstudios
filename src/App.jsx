@@ -9,6 +9,7 @@ import Home from './pages/home';
 // Components
 import MouseEffect from './components/mouseEffect';
 import Footer from "./components/footer";
+import Navbar from "./components/navbar";
 
 function App() {
   const [isMouseEffectVisible, setIsMouseEffectVisible] = useState(false);
@@ -29,6 +30,7 @@ function App() {
       <Toaster />
       {isMouseEffectVisible && <MouseEffect className="mouseEffect" />}
       <div className='max-w-[1920px] mx-auto px-8 lg:px-24'>
+        <Navbar/>
         <Routes>
           <Route path='/' element={<Home />} />
         </Routes>

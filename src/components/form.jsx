@@ -61,9 +61,9 @@ const Form = () => {
                         <input type="email" id="email" className="inputField" placeholder="O seu email" />
                     </div>
                     <div className="flex flex-col w-full mb-5">
-                        <label className="mb-1 font-medium text-white ">Indique o que procura</label>
+                        <label className="mb-1 font-medium text-white ">Tipo de projeto</label>
                         <select id="projectType" className="inputField">
-                            <option value="" disabled selected>Selecione o tipo de projeto</option>
+                            <option value="" disabled selected>Selecione uma opção</option>
                             <option value="website" >Website (Página única)</option>
                             <option value="website" >Website (Multi página)</option>
                             <option value="Aplicação web" >Aplicação Web</option>

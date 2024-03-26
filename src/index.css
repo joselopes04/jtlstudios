@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+/* MOUSE */
 .circle {
   height: 24px;
   width: 24px;
@@ -13,6 +14,7 @@
   pointer-events: none;
   z-index: 99999999;
 }
+/* MOUSE END */
 
 /* CUSTOM SCROLLBAR */
 /* width */
@@ -35,8 +37,32 @@
 ::-webkit-scrollbar-thumb:hover {
   background: #d87300;
 }
-
 /* CUSTOM SCROLLBAR END*/
+
+/* LAVA BUBBLES */
+.blobb {
+  fill: url(#lavaGradient);
+}
+
+.glow {
+  filter: url(#glowing);
+}
+
+.metasvg {
+  position: absolute;
+  height: 110vh;
+  width: 100vw;
+  top: -20px;
+  left: -20px;
+  overflow: hidden;
+}
+
+.metaballs {
+  z-index: 1;
+  overflow: hidden;
+}
+
+/* LAVA BUBBLES END*/
 
 @font-face {
   font-family: ethnocentric;
@@ -47,12 +73,16 @@
   @apply text-3xl sm:text-5xl lg:text-6xl font-semibold tracking-wider text-transparent text-center bg-gradient-to-r orangeToRedGradient bg-clip-text font-['ethnocentric'];
 }
 
+.titleNoColor {
+  @apply text-3xl sm:text-5xl lg:text-6xl font-semibold tracking-wider text-center font-['ethnocentric'];
+}
+
 .orangeToRedGradient {
   @apply from-brandOrange to-brandRed;
 }
 
 .cardContainer {
-  @apply relative h-32 hover:scale-105 transition-all bg-cover shadow-lg cursor-pointer sm:h-52 min-[1740px]:h-64 aspect-video rounded-xl hover:shadow-2xl;
+  @apply relative h-40 hover:scale-105 transition-all bg-cover shadow-lg cursor-pointer sm:h-52 min-[1740px]:h-64 aspect-video rounded-xl hover:shadow-2xl;
 }
 
 .cardFilter {
@@ -64,9 +94,13 @@
 }
 
 .inputField{
-  @apply w-full p-2 text-lg text-white placeholder-gray-400 bg-gray-700 border border-gray-600 rounded-lg lg:w-96 focus:outline-none;
+  @apply w-full p-2 text-base text-white placeholder-gray-400 bg-gray-700 border border-gray-600 rounded-lg sm:text-lg lg:w-96 focus:outline-none;
 }
 
 .button{
   @apply my-2 text-white focus:outline-none font-medium rounded-lg px-5 py-2.5 text-center bg-gradient-to-br orangeToRedGradient hover:opacity-70;
+}
+
+.navbarLink{
+  @apply text-lg font-semibold tracking-wider text-white uppercase;
 }

@@ -1,30 +1,27 @@
 import React, { useEffect } from 'react';
-import { Link } from 'react-router-dom';
 import Form from '../components/form';
 import { FaCircleCheck } from "react-icons/fa6";
+import LavaBubbles from '../components/lavaBubbles';
 
 const Home = () => {
 
     return (
         <main className='flex flex-col items-center justify-center'>
+
             <div className='flex flex-col-reverse items-center justify-center w-full min-h-screen xl:flex-row'>
-                <div className='xl:w-1/2'>
-                    <div className='flex flex-col max-w-2xl'>
-                        <h1 className='w-full title'>You dream,</h1>
-                        <h1 className='w-full title'>we develop!</h1>
-                        <hr className='h-[1px] my-5 border-none bg-gradient-to-r orangeToRedGradient' />
-                        <p className='mb-6 text-3xl text-center text-white'>Websites profissionais e personalizados para o seu sucesso online.</p>
-                        <a href="/#form" className="w-64 mx-auto button">Saber mais</a>
-                    </div>
-                </div>
-                <div className='flex justify-center mb-12 xl:w-1/2 xl:mb-0'>
-                    <img className='select-none w-[20rem] xl:w-[30rem]' src={`${process.env.PUBLIC_URL}/images/logoNOBG.png`} alt='logo' />
+                <LavaBubbles />
+                <div className='z-10 flex flex-col max-w-2xl mb-32'>
+                    <h1 className='w-full text-gray-100 titleNoColor'>You dream,</h1>
+                    <h1 className='w-full text-gray-100 titleNoColor'>we develop!</h1>
+                    <hr className='h-[1px] my-5 border-none bg-gradient-to-r orangeToRedGradient' />
+                    <p className='mb-6 text-xl text-white sm:text-3xl'>Websites profissionais e personalizados para o seu sucesso online.</p>
+                    <a href="/#form" className="w-64 mx-auto button">Saber mais</a>
                 </div>
             </div>
 
-            <div className='mb-48'>
+            <div id='portfolio' className='mb-24 sm:mb-48' >
                 <h1 className="title">Portfolio</h1>
-                <div className='grid grid-cols-1 my-4 lg:mt-6 lg:grid-cols-2 xl:grid-cols-3 gap-y-5 gap-x-16 w-[98%] sm:w-[90%]'>
+                <div className='grid grid-cols-1 my-4 lg:mt-6 lg:grid-cols-2 xl:grid-cols-3 gap-y-5 gap-x-16 w-[98%]'>
                     <a href='https://escola-conducao.jtlstudios.pt' target="_blank">
                         <div className={`cardContainer relative group mx-auto`} style={{ backgroundImage: `url(${process.env.PUBLIC_URL}/images/projetos/escolaDeConducao.png)` }}>
                             <h3 className="cardTitle cardFilter">
@@ -45,8 +42,8 @@ const Home = () => {
                 </div>
             </div>
 
-            <div className='mb-48'>
-                <h1 className="title">Serviços</h1>
+            <div className='mb-24 sm:mb-48'>
+                <h1 id='services' className="title">Serviços</h1>
                 <section className="pt-6">
                     <div className="px-4 mx-auto">
                         <div className="flex flex-wrap items-stretch -mx-4">
@@ -56,7 +53,7 @@ const Home = () => {
                                         <h4 className="text-2xl font-bold text-white">Website (Página única)</h4>
                                         <div className='flex flex-col'>
                                             <span className="ml-2 -mb-2 text-sm text-gray-200">A partir de:</span>
-                                            <span className="text-6xl font-bold text-white">300€</span>
+                                            <span className="text-5xl font-bold text-white md:text-6xl">300€</span>
                                         </div>
                                     </div>
                                     <p className="mt-3 text-white ">Website simples que contém a informação em apenas uma página.</p>
@@ -83,7 +80,7 @@ const Home = () => {
                                         <h4 className="text-2xl font-bold text-white">Website (Multi página)</h4>
                                         <div className='flex flex-col'>
                                             <span className="ml-2 -mb-2 text-sm text-gray-200">A partir de:</span>
-                                            <span className="text-6xl font-bold text-white">500€</span>
+                                            <span className="text-5xl font-bold text-white md:text-6xl">500€</span>
                                         </div>
                                     </div>
                                     <p className="mt-3 text-white ">Website onde a informação encontra-se distribuida em multíplas páginas.</p>
@@ -110,7 +107,7 @@ const Home = () => {
                                         <h4 className="text-2xl font-bold text-white">Aplicação Web</h4>
                                         <div className='flex flex-col'>
                                             <span className="ml-2 -mb-2 text-sm text-gray-200">A partir de:</span>
-                                            <span className="text-6xl font-bold text-white">1000€</span>
+                                            <span className="text-5xl font-bold text-white md:text-6xl">1000€</span>
                                         </div>
                                     </div>
 
