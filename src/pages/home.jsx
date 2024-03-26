@@ -13,7 +13,7 @@ const Home = () => {
                         <h1 className='w-full title'>You dream,</h1>
                         <h1 className='w-full title'>we develop!</h1>
                         <hr className='h-[1px] my-5 border-none bg-gradient-to-r orangeToRedGradient' />
-                        <p className='text-3xl text-center text-white ng-10'>Websites profissionais e personalizados para o seu sucesso online.</p>
+                        <p className='mb-6 text-3xl text-center text-white'>Websites profissionais e personalizados para o seu sucesso online.</p>
                         <a href="/#form" className="w-64 mx-auto button">Saber mais</a>
                     </div>
                 </div>
@@ -22,28 +22,32 @@ const Home = () => {
                 </div>
             </div>
 
-            <h1 className="title">Portfolio</h1>
-            <div className='grid grid-cols-1 my-4 lg:my-12 xl:grid-cols-2 2xl:grid-cols-3 gap-y-5 gap-x-16 w-[98%] sm:w-[90%]'>
-                <div className={`cardContainer relative group mx-auto`} style={{ backgroundImage: `url(${process.env.PUBLIC_URL}/images/projetos/escolaDeConducao.png)` }}>
-                    <h3 className="cardTitle cardFilter">
-                        Escola de condução
-                    </h3>
-                </div>
-                <div className={`cardContainer relative group mx-auto bg-gray-600 flex items-center cursor-none`}>
-                    <h3 className="mx-auto cardTitle">
-                        Coming soon
-                    </h3>
-                </div>
-                <div className={`cardContainer relative group mx-auto bg-gray-600 flex items-center cursor-none`}>
-                    <h3 className="mx-auto cardTitle">
-                        Coming soon
-                    </h3>
+            <div className='mb-48'>
+                <h1 className="title">Portfolio</h1>
+                <div className='grid grid-cols-1 my-4 lg:mt-6 lg:grid-cols-2 xl:grid-cols-3 gap-y-5 gap-x-16 w-[98%] sm:w-[90%]'>
+                    <a href='https://escola-conducao.jtlstudios.pt' target="_blank">
+                        <div className={`cardContainer relative group mx-auto`} style={{ backgroundImage: `url(${process.env.PUBLIC_URL}/images/projetos/escolaDeConducao.png)` }}>
+                            <h3 className="cardTitle cardFilter">
+                                Escola de condução
+                            </h3>
+                        </div>
+                    </a>
+                    <div className={`cardContainer relative group mx-auto bg-gray-600 flex items-center cursor-none`}>
+                        <h3 className="mx-auto cardTitle">
+                            Coming soon
+                        </h3>
+                    </div>
+                    <div className={`cardContainer relative group mx-auto bg-gray-600 flex items-center cursor-none`}>
+                        <h3 className="mx-auto cardTitle">
+                            Coming soon
+                        </h3>
+                    </div>
                 </div>
             </div>
 
-            <div>
+            <div className='mb-48'>
                 <h1 className="title">Serviços</h1>
-                <section className="py-12">
+                <section className="pt-6">
                     <div className="px-4 mx-auto">
                         <div className="flex flex-wrap items-stretch -mx-4">
                             <div className="flex w-full mb-8 sm:px-4 md:w-1/2 lg:w-1/3 lg:mb-0">
@@ -70,7 +74,7 @@ const Home = () => {
                                             <span>Registo de domínio(opcional)</span>
                                         </li>
                                     </ul>
-                                    <a href="/#form"  className="button">Saber mais</a>
+                                    <a href="/#form" className="button">Saber mais</a>
                                 </div>
                             </div>
                             <div className="flex w-full mb-8 sm:px-4 md:w-1/2 lg:w-1/3 lg:mb-0">
@@ -122,13 +126,12 @@ const Home = () => {
                                         </li>
                                         <li className="flex mb-2 space-x-2">
                                             <FaCircleCheck className='text-xl' />
-                                            <span>Pprocessamento de dados</span>
+                                            <span>Processamento de dados</span>
                                         </li>
                                     </ul>
                                     <a href="/#form" className="button">Saber mais</a>
                                 </div>
                             </div>
-
                         </div>
                     </div>
                 </section>
