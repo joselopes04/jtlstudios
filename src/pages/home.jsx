@@ -22,7 +22,7 @@ const Home = () => {
             <div id='portfolio' className='mb-24 sm:mb-48' >
                 <h1 className="title">Portfolio</h1>
                 <div className='grid grid-cols-1 my-4 lg:mt-6 lg:grid-cols-2 xl:grid-cols-3 gap-y-5 gap-x-16 w-[98%]'>
-                    <a href='https://escola-conducao.jtlstudios.pt' target="_blank">
+                    <a href='https://escola-conducao.jtlstudios.pt' rel="noreferrer" target="_blank">
                         <div className={`cardContainer relative group mx-auto`} style={{ backgroundImage: `url(${process.env.PUBLIC_URL}/images/projetos/escolaDeConducao.png)` }}>
                             <h3 className="cardTitle cardFilter">
                                 Escola de condução

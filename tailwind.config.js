@@ -7,6 +7,9 @@ module.exports = {
         'brandOrange': '#ff8800',
         'brandRed': '#c11212',
       },
+      screens: {
+        'xs': '340px', //FOLD :)
+      },
     },
   },
   plugins: [],

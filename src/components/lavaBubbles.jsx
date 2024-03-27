@@ -70,7 +70,7 @@ function LavaBubbles() {
 
     return (
             <div className="metaballs">
-                <svg className="metasvg">
+                <svg className="left-0 metasvg sm:-left-5">
                     <defs>
                         <filter id="gooify" width="400%" x="-10%" height="400%" y="-150%">
                             <feGaussianBlur in="SourceGraphic" stdDeviation="15" result="blur" />
