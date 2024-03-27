@@ -33,13 +33,13 @@ const Form = () => {
 
     return (
         <div id='form' className='mb-32'>
-            <h1 className="pb-6 title">Entre em contacto</h1>
+            <h2 className="pb-6 title">Entre em contacto</h2>
             <div className='grid max-w-5xl grid-cols-1 p-10 mb-12 transition-all border-2 gap-x-4 border-brandOrange rounded-xl sm:grid-cols-2 bg-slate-800'>
                 <div>
-                    <h2 className='text-xl font-bold tracking-wider text-white ng-10 sm:text-3xl'>
+                    <h3 className='text-xl font-bold tracking-wider text-white ng-10 sm:text-3xl'>
                         Contacte-nos e <span className='text-brandOrange'>juntos</span> vamos criar algo
-                        <span className='text-brandOrange'> incrível</span>!
-                    </h2>
+                        <span className='text-brandOrange'> incrível!</span>
+                    </h3>
                     <ul className="my-5 ml-3 space-y-4 text-white sm:space-y-10 sm:my-10 sm:mb-0">
                         <li className='flex items-center space-x-5 font-semibold tracking-wide'>
                             <MdOutlinePhone className='text-xl' />

@@ -1,7 +1,8 @@
 import React, { useEffect } from 'react';
 import Form from '../components/form';
-import { FaCircleCheck } from "react-icons/fa6";
+import { FaCar, FaCircleCheck, FaUsers } from "react-icons/fa6";
 import LavaBubbles from '../components/lavaBubbles';
+import { IoSpeedometerSharp } from "react-icons/io5";
 
 const Home = () => {
 
@@ -19,8 +20,41 @@ const Home = () => {
                 </div>
             </div>
 
+            <div id='sobre' className='mb-24 sm:mb-48' >
+                <h1 className="title">Sobre</h1>
+                <div className='flex flex-col justify-center w-11/12 mx-auto md:w-4/5 text-pretty'>
+                    <div className='xl:hidden'>
+                        <p className='mt-4 text-lg font-semibold tracking-wider text-white sm:text-xl md:text-2xl'>
+                            A <span className='font-bold text-brandOrange'>JTL STUDIOS </span>
+                            é uma agência digital especializada na criação de websites.
+                        </p>
+                        <p className='mt-4 text-lg font-semibold tracking-wider text-white sm:text-xl md:text-2xl'>
+
+                            Iremos transformar a sua presença online e impulsionar o sucesso do seu negócio.
+                            Utilizamos as mais recentes <span className='font-bold text-brandOrange'>tecnologias e tendências </span>
+                            de design para garantir que seu website seja não apenas visualmente impressionante, mas também altamente funcional e eficaz.
+                        </p>
+                    </div>
+                    <div className='hidden xl:block'>
+                        <p className='mt-4 text-lg font-semibold tracking-wider text-white sm:text-xl md:text-2xl'>
+                            A <span className='font-bold text-brandOrange'>JTL STUDIOS </span>
+                            é uma agência digital especializada na criação de websites.
+                            Iremos transformar a sua presença online e impulsionar o sucesso do seu negócio.
+                            Utilizamos as mais recentes <span className='font-bold text-brandOrange'>tecnologias e tendências </span>
+                            de design para garantir que seu website seja não apenas visualmente impressionante, mas também altamente funcional e eficaz.
+                        </p>
+                    </div>
+                    <p className='mt-4 text-lg font-semibold tracking-wider text-white sm:text-xl md:text-2xl'>
+                        Conte com a <span className='font-bold text-brandOrange'>JTL STUDIOS </span>
+                        para criar uma experiência digital única para seus clientes e alcançar seus objetivos online.
+                        Entre em contato hoje mesmo e vamos começar a
+                        <span className='font-bold text-brandOrange'> trabalhar juntos!</span>
+                    </p>
+                </div>
+            </div>
+
             <div id='portfolio' className='mb-24 sm:mb-48' >
-                <h1 className="title">Portfolio</h1>
+                <h2 className="title">Portfolio</h2>
                 <div className='grid grid-cols-1 my-4 lg:mt-6 lg:grid-cols-2 xl:grid-cols-3 gap-y-5 gap-x-16 w-[98%]'>
                     <a href='https://escola-conducao.jtlstudios.pt' rel="noreferrer" target="_blank">
                         <div className={`cardContainer relative group mx-auto`} style={{ backgroundImage: `url(${process.env.PUBLIC_URL}/images/projetos/escolaDeConducao.png)` }}>
@@ -43,14 +77,14 @@ const Home = () => {
             </div>
 
             <div className='mb-24 sm:mb-48'>
-                <h1 id='services' className="title">Serviços</h1>
+                <h2 id='services' className="title">Serviços</h2>
                 <section className="pt-6">
                     <div className="px-4 mx-auto">
                         <div className="flex flex-wrap items-stretch -mx-4">
                             <div className="flex w-full mb-8 sm:px-4 md:w-1/2 lg:w-1/3 lg:mb-0">
                                 <div className="flex flex-col max-w-md p-6 mx-auto space-y-6 transition-all border-2 shadow hover:scale-105 border-brandOrange rounded-xl sm:p-8 bg-slate-800">
                                     <div className="space-y-2">
-                                        <h4 className="text-2xl font-bold text-white">Website (Página única)</h4>
+                                        <h3 className="text-2xl font-bold text-white">Website (Página única)</h3>
                                         <div className='flex flex-col'>
                                             <span className="ml-2 -mb-2 text-sm text-gray-200">A partir de:</span>
                                             <span className="text-5xl font-bold text-white md:text-6xl">300€</span>
@@ -77,7 +111,7 @@ const Home = () => {
                             <div className="flex w-full mb-8 sm:px-4 md:w-1/2 lg:w-1/3 lg:mb-0">
                                 <div className="flex flex-col max-w-md p-6 mx-auto space-y-6 transition-all border-2 shadow hover:scale-105 border-brandOrange rounded-xl sm:p-8 bg-slate-800">
                                     <div className="space-y-2">
-                                        <h4 className="text-2xl font-bold text-white">Website (Multi página)</h4>
+                                        <h3 className="text-2xl font-bold text-white">Website (Multi página)</h3>
                                         <div className='flex flex-col'>
                                             <span className="ml-2 -mb-2 text-sm text-gray-200">A partir de:</span>
                                             <span className="text-5xl font-bold text-white md:text-6xl">500€</span>
@@ -104,7 +138,7 @@ const Home = () => {
                             <div className="flex w-full mb-8 sm:px-4 md:w-1/2 lg:w-1/3 lg:mb-0">
                                 <div className="flex flex-col max-w-md p-6 mx-auto space-y-6 transition-all border-2 shadow hover:scale-105 border-brandOrange rounded-xl sm:p-8 bg-slate-800">
                                     <div className="space-y-2">
-                                        <h4 className="text-2xl font-bold text-white">Aplicação Web</h4>
+                                        <h3 className="text-2xl font-bold text-white">Aplicação Web</h3>
                                         <div className='flex flex-col'>
                                             <span className="ml-2 -mb-2 text-sm text-gray-200">A partir de:</span>
                                             <span className="text-5xl font-bold text-white md:text-6xl">1000€</span>
@@ -134,7 +168,7 @@ const Home = () => {
                 </section>
             </div>
             <Form />
-        </main>
+        </main >
     );
 };
 
