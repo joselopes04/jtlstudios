@@ -12,8 +12,7 @@ const Home = () => {
             <div className='flex flex-col-reverse items-center justify-center w-full min-h-screen xl:flex-row'>
                 <LavaBubbles />
                 <div className='z-10 flex flex-col max-w-2xl mb-32'>
-                    <h1 className='w-full text-gray-100 titleNoColor'>You dream,</h1>
-                    <h1 className='w-full text-gray-100 titleNoColor'>we develop!</h1>
+                    <h1 className='w-full text-gray-100 titleNoColor'>You dream, we develop!</h1>
                     <hr className='h-[1px] my-5 border-none bg-gradient-to-r orangeToRedGradient' />
                     <h2 className='mb-6 text-xl text-white sm:text-3xl'>Websites profissionais e personalizados para o seu sucesso online.</h2>
                     <a href="/#form" className="w-64 mx-auto button">Saber mais</a>
