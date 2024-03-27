@@ -14,7 +14,7 @@ const Home = () => {
                     <h1 className='w-full text-gray-100 titleNoColor'>You dream,</h1>
                     <h1 className='w-full text-gray-100 titleNoColor'>we develop!</h1>
                     <hr className='h-[1px] my-5 border-none bg-gradient-to-r orangeToRedGradient' />
-                    <p className='mb-6 text-xl text-white sm:text-3xl'>Websites profissionais e personalizados para o seu sucesso online.</p>
+                    <h2 className='mb-6 text-xl text-white sm:text-3xl'>Websites profissionais e personalizados para o seu sucesso online.</h2>
                     <a href="/#form" className="w-64 mx-auto button">Saber mais</a>
                 </div>
             </div>
