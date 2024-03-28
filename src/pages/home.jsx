@@ -20,7 +20,7 @@ const Home = () => {
             </div>
 
             <div id='sobre' className='mb-24 sm:mb-48' >
-                <h1 className="title">Sobre</h1>
+                <h2 className="title">Sobre</h2>
                 <div className='flex flex-col justify-center w-11/12 mx-auto md:w-4/5 text-pretty'>
                     <div className='xl:hidden'>
                         <p className='mt-4 text-lg font-semibold tracking-wider text-white sm:text-xl md:text-2xl'>
@@ -75,8 +75,8 @@ const Home = () => {
                 </div>
             </div>
 
-            <div className='mb-24 sm:mb-48'>
-                <h2 id='services' className="title">Serviços</h2>
+            <div id='services' className='mb-24 sm:mb-48'>
+                <h2 className="title">Serviços</h2>
                 <section className="pt-6">
                     <div className="px-4 mx-auto">
                         <div className="flex flex-wrap items-stretch -mx-4">

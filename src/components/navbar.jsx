@@ -11,21 +11,26 @@ const Navbar = () => {
                 </div>
                 <ul className='items-center hidden md:flex gap-x-10'>
                     <li className='navbarLink'>
-                        <Link to={"/#portfolio"}>
+                        <a href="/#sobre">
+                            Sobre
+                        </a>
+                    </li>
+                    <li className='navbarLink'>
+                        <a href="/#portfolio">
                             Portfolio
-                        </Link>
+                        </a>
                     </li>
                     <li className='navbarLink'>
-                        <Link to={"/#services"}>
+                        <a href="/#services">
                             Serviços
-                        </Link>
+                        </a>
                     </li>
                     <li className='navbarLink'>
-                        <Link to={"/#form"}>
+                        <a href="/#form">
                             Entre em contacto
-                        </Link>
+                        </a>
                     </li>
-                </ul> 
+                </ul>
             </div>
         </nav>
     );
